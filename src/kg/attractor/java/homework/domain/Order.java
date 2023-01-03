@@ -1,7 +1,5 @@
 package kg.attractor.java.homework.domain;
 
-import kg.attractor.java.homework.util.NotImplementedException;
-
 import java.util.List;
 import java.util.Objects;
 
@@ -54,5 +52,9 @@ public class Order {
     //----------------------------------------------------------------------
 
     public void calculateTotal() {
+        total = items.stream()
+                .mapToDouble(e -> e.getPrice() * e.getAmount())
+                .sum();
     }
+
 }
