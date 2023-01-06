@@ -63,7 +63,7 @@ public class Main {
         String input;
         printActions();
         while (true) {
-            System.out.print("ENTER THE NUMBER OF THE FOLLOWING ACTION: ");
+            System.out.print("\nENTER THE NUMBER OF THE FOLLOWING ACTION: ");
             try {
                 input = new Scanner(System.in).nextLine();
                 return checkAction(input);
@@ -81,21 +81,21 @@ public class Main {
     }
 
     public static void printActions() {
-        System.out.println("Choose Action: " +
-                "\n1  - Print orders" +
-                "\n2  - Get max orders (Enter number of orders)" +
-                "\n3  - Get min orders (Enter number of orders)" +
-                "\n4  - Get home delivery orders" +
-                "\n5  - Get max home delivery orders" +
-                "\n6  - Get min home delivery orders" +
-                "\n7  - Get orders from total range(50..100)" +
-                "\n8  - Get orders total" +
-                "\n9  - Get unique emails" +
-                "\n10 - Get unique customer orders" +
-                "\n11 - Get unique customer orders total" +
-                "\n12 - Get customer of max orders total" +
-                "\n13 - Get customer of min orders total" +
-                "\n14 - Get sold items amount");
+        System.out.println("\nChoose Action: " +
+                "\n[ 1 ]  - Print orders" +
+                "\n[ 2 ]  - Get max orders (Enter number of orders)" +
+                "\n[ 3 ]  - Get min orders (Enter number of orders)" +
+                "\n[ 4 ]  - Get home delivery orders" +
+                "\n[ 5 ]  - Get max home delivery orders" +
+                "\n[ 6 ]  - Get min home delivery orders" +
+                "\n[ 7 ]  - Get orders from total range(50..100)" +
+                "\n[ 8 ]  - Get orders total" +
+                "\n[ 9 ]  - Get unique emails" +
+                "\n[ 10 ] - Get unique customer orders" +
+                "\n[ 11 ] - Get unique customer orders total" +
+                "\n[ 12 ] - Get customer of max orders total" +
+                "\n[ 13 ] - Get customer of min orders total" +
+                "\n[ 14 ] - Get sold items amount");
     }
 
     public static void getAction(List<Order> orders) {
