@@ -39,5 +39,16 @@ public class Customer {
     //------   Реализация ваших методов должна быть ниже этой линии   ------
     //----------------------------------------------------------------------
 
+    @Override
+    public String toString() {
+        return String.format("Full Name: %s, email: %s", fullName, email);
+    }
 
+    public void printCustomer() {
+        System.out.println("\n+-----------------------------------+-----------------------------------+");
+        System.out.println("|               Name                |               Email               |");
+        System.out.println("+-----------------------------------+-----------------------------------+");
+        System.out.printf("| %-33s | %-33s |%n", fullName, email);
+        System.out.println("+-----------------------------------+-----------------------------------+");
+    }
 }
