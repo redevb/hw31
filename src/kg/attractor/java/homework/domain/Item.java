@@ -58,5 +58,15 @@ public class Item {
     //------   Реализация ваших методов должна быть ниже этой линии   ------
     //----------------------------------------------------------------------
 
+    @Override
+    public String toString() {
+        return String.format("Name: %s, Price: %s, Type: %s, Amount: %s%n",
+                name, price, type, amount);
+    }
 
+    public void printItem() {
+        System.out.printf("| %-25s | %-10s | %-15s | %-10s |%n",
+                name, price, type, amount);
+        System.out.println("+---------------------------+------------+-----------------+------------+");
+    }
 }
