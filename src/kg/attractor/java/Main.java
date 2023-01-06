@@ -34,7 +34,7 @@ public class Main {
 
     }
 
-    public static void printOrders(List<Order> orders) {
+    public static void displayOrders(List<Order> orders) {
         orders.forEach(Order::displayOrderCustomer);
     }
 
@@ -102,7 +102,7 @@ public class Main {
         while (true) {
             switch (getChoice()) {
                 case 1:
-                    printOrders(orders);
+                    displayOrders(orders);
                 case 2: {
                     var printMaxOrders = displayListMaxOrders(orders);
                     printMaxOrders.forEach(Order::displayOrderCustomer);
